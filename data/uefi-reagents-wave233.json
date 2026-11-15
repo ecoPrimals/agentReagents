@@ -1,0 +1,34 @@
+{
+  "wave": 233,
+  "known_varstores": {
+    "AMD_PBS_SETUP": {
+      "guid": "A339D746-F678-49B3-9FC7-54CE0F9DF226",
+      "size": 256,
+      "known_offsets": {
+        "0x48": "iGPU (0=Disabled, 1=Forces)",
+        "0x49": "UMA Frame Buffer (0x06=512M, 0xFF=Auto)",
+        "0x4E": "Primary Video (0x02=PCIe)"
+      }
+    },
+    "AmdSetupRPL_0x5000": {
+      "offsets_from_osint": {
+        "0x21": "Platform First Error Handling",
+        "0x22": "Core Performance Boost",
+        "0x23": "Global C-state Control",
+        "0x15C": "FCLK Frequency",
+        "0x35": "OC Mode"
+      }
+    },
+    "Setup_EC87D643": {
+      "guid": "EC87D643-EBA4-4BB5-A1E5-3F3E36B20DA9",
+      "note": "Standard AMI Setup GUID"
+    }
+  },
+  "tools": {
+    "setup_var_efi": "Z:\\EFI\\gaia\\setup_var.efi (101KB, Rust, standalone)",
+    "modGRUBShell": "Z:\\EFI\\tools\\modGRUBShell.efi (5.5MB, GRUB+setup_var)",
+    "smokeless_umaf": "Z:\\EFI\\UMAF\\Bootx64.efi (9KB, AMD CBS browser)",
+    "asus_wmi": "ASUSManagement WMI (58/58 read, 0 write \u2014 error 14/26)"
+  },
+  "pin": "579163 \u2014 human ZK authentication, NOT 'normal'"
+}
